@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "{{name}}": {
+      "type": "http",
+      "url": "https://YOUR-DOMAIN/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
+    }
+  }
+}

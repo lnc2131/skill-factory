@@ -1,0 +1,13 @@
+{
+  "name": "skill-factory",
+  "version": "0.1.0",
+  "description": "Skills that make skills: scaffold a new skill at the right level, ship it to GitHub safely, launch it on X, and tear down other people's skills to see how they work.",
+  "author": {
+    "name": "Lucas Chen",
+    "url": "https://github.com/lnc2131"
+  },
+  "homepage": "https://github.com/lnc2131/skill-factory",
+  "repository": "https://github.com/lnc2131/skill-factory",
+  "license": "MIT",
+  "keywords": ["skills", "plugins", "scaffold", "publish", "twitter", "x", "teardown"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "{{name}}",
+  "version": "0.1.0",
+  "description": "{{description}}",
+  "author": {
+    "name": "{{author}}",
+    "url": "https://github.com/{{github}}"
+  },
+  "homepage": "https://github.com/{{github}}/{{name}}",
+  "repository": "https://github.com/{{github}}/{{name}}",
+  "license": "MIT",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "{{title}} API key",
+      "description": "Your API key (starts with {{pkg}}_).",
+      "sensitive": true
+    }
+  }
+}

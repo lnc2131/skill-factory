@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "owner": {
+    "name": "{{author}}"
+  },
+  "plugins": [
+    {
+      "name": "{{name}}",
+      "description": "{{description}}",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

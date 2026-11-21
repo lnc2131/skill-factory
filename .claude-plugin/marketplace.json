@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "skill-factory",
+  "description": "Skills that make skills: scaffold, ship, launch and tear down Claude Code skills.",
+  "owner": {
+    "name": "Lucas Chen"
+  },
+  "plugins": [
+    {
+      "name": "skill-factory",
+      "description": "Scaffold a skill at the right level, ship it to GitHub safely, launch it on X, tear down others' skills.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
