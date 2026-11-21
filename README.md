@@ -35,7 +35,7 @@ Each skill owns one stage and hands a file to the next, so you can skip stages y
 | Research | **skill-teardown** | Takes apart someone else's skill/plugin without running it: level, what runs on their server, license, rebuild plan | `TEARDOWN.md` |
 | Build | **skill-scaffold** | Generates a repo at the right level, with plugin files, tests and README/INSTALL | Repo folder |
 | Ship | **skill-ship** | Scans for secrets and personal info, publishes to GitHub, installs it from GitHub to prove the guide works | `LAUNCH.md` |
-| Launch | **x-launch** | Drafts a thread, counts length exactly like X, shows cost, previews for approval, posts via [Jaz](https://github.com/lnc2131/jaz) | Post links |
+| Launch | **x-launch** | Drafts a thread, counts length exactly like X, shows cost, previews for approval, posts via [Jaz](https://github.com/lnc2131/jaz-videowatching-skill) | Post links |
 
 ## The 5 levels of a skill
 

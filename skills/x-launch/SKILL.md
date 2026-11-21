@@ -6,7 +6,7 @@ description: Announce a skill, repo or project on X (Twitter) as a short thread,
 # X launch
 
 Needs the Jaz plugin (`post_to_x`) with X keys set up (`jaz x-setup`). If `post_to_x` isn't available,
-say so and point to https://github.com/lnc2131/jaz/blob/main/INSTALL.md#connect-x-optional.
+say so and point to https://github.com/lnc2131/jaz-videowatching-skill/blob/main/INSTALL.md#connect-x-optional.
 
 ## Steps
 
