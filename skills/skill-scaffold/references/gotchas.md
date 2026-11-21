@@ -28,6 +28,12 @@ Read this before writing level 4-5 code. Each one cost real time once.
 - Always run `claude plugin validate <dir>`.
 - claude.ai custom connectors take a URL, not custom headers: accept the key in the URL (`/mcp/<key>`).
 
+## Writing SKILL.md
+
+- **Never write `$0`, `$1`… or `$ARGUMENTS` unless you mean them.** Claude Code replaces them with the
+  skill's arguments, so "$0.015" turned into "<first argument>.015" in x-launch. Write "1.5 cents" or
+  "0.015 USD". skill-ship's preflight now fails price-like `$0.x` text in skills.
+
 ## Python libraries
 
 - authlib >= 1.9 integrates with httpx2. With plain httpx, wrap `authlib.oauth1.ClientAuth` in an `httpx.Auth`.

@@ -72,6 +72,15 @@ def test_preflight_blocks_secrets_and_flags_personal_info(tmp_path):
     assert "Andrew Chen" in joined and "617-555-0123" in joined and "a@b.edu" in joined
 
 
+def test_preflight_catches_argument_placeholders(tmp_path):
+    repo = _repo(tmp_path)
+    skill = repo / "skills/clean-skill/SKILL.md"
+    skill.write_text(skill.read_text().replace("# Clean Skill", "# Clean Skill\n\nCosts $0.015 per post. Uses $1."))
+    fails, warns, _ = preflight.check(repo, [], run_claude=False)
+    assert any("'$0.015" in f for f in fails)
+    assert any("'$1." in w for w in warns)
+
+
 # --- x-launch ------------------------------------------------------------------
 def test_x_length_matches_x():
     # Both posts were accepted by X on 2026-11-21 at these lengths.

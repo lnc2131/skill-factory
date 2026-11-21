@@ -127,11 +127,17 @@ def check(root: Path, private_terms: list[str], run_claude: bool) -> tuple[list[
         if fm.get("name") != s.parent.name:
             fails.append(f"{rel}: frontmatter name '{fm.get('name')}' must match folder '{s.parent.name}'")
         desc = fm.get("description", "")
+        body = s.read_text()
+        for m in re.finditer(r"\$(?:\d|ARGUMENTS)\S*", body):
+            line = body.count("\n", 0, m.start()) + 1
+            msg = (f"{rel}:{line}: '{m.group(0)}' - Claude Code replaces $0, $1… and $ARGUMENTS in a skill "
+                   "with the skill's arguments; write prices as '1.5 cents' or '0.015 USD'")
+            (fails if re.match(r"\$\d+[.,]\d", m.group(0)) else warns).append(msg)
         if not desc:
             fails.append(f"{rel}: missing description")
         elif len(desc) > 1024:
             fails.append(f"{rel}: description is {len(desc)} chars (max 1024)")
-        elif re.search(r"\bTODO\b(?!s)", desc + s.read_text()):
+        elif re.search(r"\bTODO\b(?!s)", desc + body):
             warns.append(f"{rel}: still has TODOs")
         else:
             oks.append(f"{rel}: frontmatter ok")

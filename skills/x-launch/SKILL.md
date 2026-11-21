@@ -16,7 +16,7 @@ say so and point to https://github.com/lnc2131/jaz/blob/main/INSTALL.md#connect-
 2. **Draft `THREAD.md`** next to `LAUNCH.md`. Posts separated by a line with only `---`:
    - Post 1: the hook (the story) + the repo link. This is the one people see.
    - Post 2: what it does in plain words, 1-3 concrete outputs.
-   - Post 3 (optional): what's next / call to action. No link in posts 2-3 keeps them at $0.015.
+   - Post 3 (optional): what's next / call to action. No link in posts 2-3 keeps them at 1.5 cents each.
    - A 20-30 s screen recording sells it best: macOS `Cmd+Shift+5`, then add `media: /path/demo.mov`
      to post 1.
    - Keep the user's voice. Say "rebuilt" rather than "reverse engineered" when we didn't have the
